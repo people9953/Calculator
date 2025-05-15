@@ -1,0 +1,136 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Calculator {
+	border: 2px solid rgb(112, 160, 122);
+	background-color: black;
+	padding: 30px;
+	height: 700px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute; 
+	border-radius: 10px;
+}
+
+.color-button-group {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-self: flex-start;
+	margin-bottom: 15px;
+}
+
+.color-button {
+	border: 2px solid red;
+	border-radius: 50%;
+	background-color: red;
+	width: 30px;
+	height: 30px;
+}
+
+.color-button.color-button-second {
+	background-color: yellow;
+	border-color: yellow;
+}
+
+.color-button.color-button-third {
+	background-color: green;
+	border-color: green;
+}
+
+.display {
+	border: 2px solid rgb(213, 81, 86);
+	background-color: black;
+	padding: 30px;
+	height: 150px;
+	width: 440px;
+	display: flex;
+	flex-direction: column;
+}
+
+.result {
+	font-size: 40px;
+	text-align: end;
+	margin-top: auto;
+	color: white;
+}
+
+.buttons {
+	border: 2px solid rgb(81, 81, 192);
+	background-color: black;
+	padding: 30px;
+	height: 470px;
+	width: 440px;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.buttons button {
+	padding: 20px;
+	border: none;
+	background-color: gray;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(25% - 10px);
+}
+
+.buttons .function {
+	background-color: darkgray;
+	color: white;
+}
+
+.buttons .operator {
+	background-color: orange;
+	color: white;
+}
+
+.buttons .zero {
+	text-align: center;
+	padding-left: 35px;
+	width: calc(50% - 10px);
+}
+
+.buttons button:hover {
+	background-color: #dcdcdc;
+}
+
+.buttons button:active {
+	background-color: #a0a0a0;
+}
+
+.buttons .buttonfunction:hover {
+	background-color: #b0b0b0;
+}
+
+.buttons .buttonfunction:active {
+	background-color: #808080;
+}
+
+.buttons .buttonoperator:hover {
+	background-color: #ffb060;
+}
+
+.buttons .buttonoperator:active {
+	background-color: #ff8000;
+}
